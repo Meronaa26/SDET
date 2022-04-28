@@ -1,0 +1,5 @@
+TESTNG is a testing framework or tool
+==>allows us to give or change existing behaviour of a method
+
+ANNOTATIONS
+1==> @test ==> it will be an executable method

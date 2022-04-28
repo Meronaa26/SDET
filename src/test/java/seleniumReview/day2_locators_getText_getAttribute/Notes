@@ -1,0 +1,98 @@
+Selenium Locators
+help us locate  web elements using SELENIUM WEBDRIVER
+Methods coming from selenium library that helps us find WebElement
+we have 8 locators
+
+
+1==>linkText(" the text of the link")
+     will look through all of the links' texts on the page and will return the link with matching text.
+     this link only will work on links
+2==> partialLinkText
+     will be looking for PARTIAL TEXT MATCH
+     similar to .contains method .java
+
+     ctrl+shift
+
+3==>name
+    looks through the html code and returns the matching "name" attribute value
+
+4==>id
+    very similar to name locator
+    id is unique to each web element
+    sometimes id can be dynamic
+
+5==> className
+    very similar to name and id
+    it uses "class" attribute value
+6==> tagName
+   locating elements using their tag names
+
+
+getText() ==> it gets the text of given Webelement
+              only able to return the text that is in between the OPENING TAG  and CLOSING TAG
+              doesn't accept any argument
+              return type is : String
+getAttribute(" takes an attribute") ==> method will get the given attribute value
+                                 is only able to read inside of the <>
+                                 it will find the matching attribute name and return the value
+
+
+
+findElement()==> finds and returns a SINGLE web element
+                  comes from selenium library
+                  NoSuchElementException ==>
+                                         locator might not be correct
+                                         page is not loaded
+                                         BrowserDriver is not on the same page with the browser
+
+
+
+8==> cssSelector ==> will be able to locate with any of the attribute  provided inside the tag
+                     we are not just limited to mane, id........
+                     able to create CUSTOM locators
+     SYNTAX=1        tagname[attribute='value]
+                     a[id='uh7']
+                     a[name='bb95]
+                     a[href='http...']
+
+      SYNTAX=2  only use id or class
+                tagname#idvalue    ==># stand for id attribute
+                tagname.classvalue   ==>.stands for class attribute
+                a#uh7
+                a.kk99
+
+
+.isDisplayed()==> will verify if the method on the page is diplayed
+                  boolean type
+                  doesn't accept any arguments
+                  used on already located webelement
+
+
+
+8==> XPATH
+          create custom locator using any given attribute
+          2 types
+                1==> absolute xpath starts with single /
+                      starts from the root element in html page
+                      usually it is very long and not dependable ==> not recommended to use
+                      it is not stable
+                      if there is any minimal change happen in the html it will not work
+                2==>dynamic xpath  starts with //
+                           you can start anywhere in html page ==> very dependable and useful
+                           only time that doesn't work is only when attribute value you use is changed
+                           //a[@name='bb95']
+                           COMMONLY USED XPATH
+                            1==>//tagname[@attribute='value']
+                            2==>//tagname[contains(@attribute,'value')]
+                            3==>tagname[.='text']
+                            4==>//*[attribute='value']
+
+
+
+HOW TO MOVE FROM PARENT TO CHILD USING CSS SELECTOR  ==> when we can not locate  a unique attribute/value and we can locate the parent and move down to child
+ example==> div[id='content']>div>h2
+           tagname[attribute='value']> childtagname
+ WE CAN NOT DO FROM CHILD TO PARENT USING CSS BUT WITH XPATH(/..)
+
+//h2[.='**]/..
+
