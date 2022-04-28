@@ -1,4 +1,4 @@
-package com.cydeo.Day2;
+package Day2;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
