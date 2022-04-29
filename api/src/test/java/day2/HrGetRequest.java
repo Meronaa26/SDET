@@ -1,4 +1,4 @@
-package Day2;
+package day2;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
