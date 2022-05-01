@@ -22,7 +22,7 @@ public class Employee {
 
 
 
-    //this are all the fields we have   ==> @JsonIgnoreProperties(ignoreUnknown = true)  annotation help us to ignore the fields that we don't want 
+    //this are all the fields we have   ==> @JsonIgnoreProperties(ignoreUnknown = true)  annotation help us to ignore the fields that we don't want
 //    "employee_id": 100,
 //            "first_name": "Steven",
 //            "last_name": "King",
