@@ -16,7 +16,7 @@ public class SpartanWithAuthTests  extends SpartanAuthTestBase {
     public void test1(){
 
 
-        get("/api/spartans").then().statusCode(200).log().all();
+        get("/api/spartans").then().statusCode(401).log().all();   // 401 I don't know who you are ==> verification /Authentication
     }
 
     @DisplayName("GET /api/spartans as admin user expect 200")
@@ -29,11 +29,11 @@ public class SpartanWithAuthTests  extends SpartanAuthTestBase {
                       .when()
                       .get("/api/spartans")
                       .then()
-                      .statusCode(204)
+                      .statusCode(200)
                       .log().all();
     }
 
-    @DisplayName("DELETE /spartans/{id} as editor user expect 403")
+    @DisplayName("DELETE /spartans/{id} as editor user expect 403")   // only Admin can delete a ==> Authorization   no right to delete
     @Test
     public void testEditorDelete(){
 

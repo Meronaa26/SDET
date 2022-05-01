@@ -19,6 +19,7 @@
     </build>
     <modules>
         <module>api</module>
+        <module>java_Review</module>
     </modules>
 
 
