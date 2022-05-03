@@ -4,7 +4,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-public class ConfigurationReader {
+public class
+ConfigurationReader {
     // we will create a re-usable method that will be reading from configuration.reader.file
 
          //1==> Create properties object
