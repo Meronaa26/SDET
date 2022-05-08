@@ -6,7 +6,7 @@ public class Company {
         Employee employee = new Employee();
         employee.jobTitle="SDET";
         employee.name="MERON";
-      
+
         employee.work();
     }
 }
