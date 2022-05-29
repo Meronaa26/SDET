@@ -25,7 +25,7 @@ public class SpartanTestsWithPath {
     @DisplayName("Get one spartan with path Method")
     public void test1(){
         Response response = given().accept(ContentType.JSON).and().
-                              pathParam("id",19)
+                              pathParam("id",55)
                                   .when().get("/api/spartans/{id}");
 
         assertEquals(response.statusCode(),200);

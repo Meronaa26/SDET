@@ -31,6 +31,8 @@ public class HrGetRequest {
                 .when()
                 .get("/regions/2");
 
+
+
         response.prettyPrint();
 
        assertEquals(response.statusCode(),200);

@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BasicNavigation {
     public static void main(String[] args) throws InterruptedException {
-       WebDriverManager.chromedriver().setup();
+      WebDriverManager.chromedriver().setup();
 
         //this line opens a browser
         // create an instance of selenium web driver

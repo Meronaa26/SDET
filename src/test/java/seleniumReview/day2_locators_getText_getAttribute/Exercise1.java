@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Exercise1 {
     public static void main(String[] args) {
-        WebDriverManager.chromedriver().setup();
+        WebDriverManager.chromedriver().setup(); // it will set the chrome browser in the automation script
         WebDriver driver =new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.yahoo.com");

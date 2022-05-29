@@ -23,7 +23,7 @@ public class SpartanTestsWithParameters {
         RestAssured.baseURI ="http://52.207.61.129:8000";
     }
 
-    @DisplayName("GET request to /api/spartans/{id} with ID 5")
+    @DisplayName("GET request to /api/spartans/{id} with ID 50")
     @Test
     public void test1(){
 
