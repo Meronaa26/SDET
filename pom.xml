@@ -20,6 +20,7 @@
     <modules>
         <module>api</module>
         <module>java_Review</module>
+        <module>JavaInterviewPracticeQuestions</module>
     </modules>
 
 
